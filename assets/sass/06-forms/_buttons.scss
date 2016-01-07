@@ -1,0 +1,86 @@
+a.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-radius: 0;
+	background: $color__background-button;
+	// @include font-size(0.75);
+	line-height: 1;
+	padding: .9em 1em;
+	display: block;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	@include transition(all, 0.75s, linear);
+	.content-box & {
+		background-color: $color__secondary;
+		color: white;
+	}
+	&.blue {
+		background-color: $color__secondary;
+		color: white;
+	}
+	.blue & {
+		background-color: $color__secondary__light;
+		color: white;
+	}
+	.blue .content-box & {
+		background-color: $color__secondary;
+	}
+	&.organe {
+		background-color: $color__primary;
+		color: white;
+	}
+	.organe & {
+		background-color: $color__primary__light;
+		color: white;
+	}
+	.organe .content-box & {
+		background-color: $color__primary;
+	}
+}
+
+a.btn:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background-color: $color__text-main;
+	.content-box & {
+		background-color: $color__secondary__light;
+		color: white;
+	}
+	&.blue {
+		background-color: $color__secondary__light;
+	}
+	.blue & {
+		background-color: $color__secondary;
+	}
+	.blue .content-box & {
+		background-color: $color__secondary__dark;
+	}
+	&.oragne {
+		background-color: $color__primary__light;
+	}
+	.oragne & {
+		background-color: $color__primary;
+	}
+	.oragne .content-box & {
+		background-color: $color__primary__dark;
+	}
+}
+
+a.btn:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+a.btn:active,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	background-color: $color__text-main;
+}

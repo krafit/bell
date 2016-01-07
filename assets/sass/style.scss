@@ -1,0 +1,116 @@
+/*
+Theme Name: Bell
+Theme URI: https://krafit.de/
+Author: Simon Kraft (krafit.de)
+Author URI: https://simonkraft.de/
+Description: 
+Version: 0.1 - Build 1601072302
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: krafit_bell
+Tags: 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+bell is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+01.0 Normalize
+02.0 Typography
+03.0 Elements
+04.0 Columns
+05.0 Navigation
+	05.1 Links
+	05.2 Menus
+06.0 Forms
+07.0 Accessibility
+08.0 Alignments
+09.0 Clearings
+10.0 Header
+11.0 Content
+	11.1 Posts and pages
+	11.2 Asides
+	11.3 Comments
+	11.4 404
+12.0 Footer
+13.0 Media
+	13.1 Captions
+	13.2 Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+@import "mixins/mixins-responsive";
+
+/*--------------------------------------------------------------
+01.0 Normalize
+--------------------------------------------------------------*/
+@import "01-normalize/normalize";
+
+/*--------------------------------------------------------------
+02.0 Typography
+--------------------------------------------------------------*/
+@import "02-typography/typography";
+
+/*--------------------------------------------------------------
+03.0 Elements
+--------------------------------------------------------------*/
+@import "03-elements/elements";
+
+/*--------------------------------------------------------------
+04.0 Columns
+--------------------------------------------------------------*/
+@import "04-columns/columns";
+
+/*--------------------------------------------------------------
+05.0 Navigation
+--------------------------------------------------------------*/
+@import "05-navigation/navigation";
+
+/*--------------------------------------------------------------
+06.0 Forms
+--------------------------------------------------------------*/
+@import "06-forms/forms";
+
+/*--------------------------------------------------------------
+07.0 Accessibility
+--------------------------------------------------------------*/
+@import "07-accessibility/accessibility";
+
+/*--------------------------------------------------------------
+08.0 Alignments
+--------------------------------------------------------------*/
+@import "08-alignments/alignments";
+
+/*--------------------------------------------------------------
+09.0 Clearings
+--------------------------------------------------------------*/
+@import "09-clearings/clearings";
+
+/*--------------------------------------------------------------
+10.0 Header
+--------------------------------------------------------------*/
+@import "10-header/header";
+
+/*--------------------------------------------------------------
+11.0 Content
+--------------------------------------------------------------*/
+@import "11-content/site";
+
+/*--------------------------------------------------------------
+12.0 Footer
+--------------------------------------------------------------*/
+@import "12-footer/footer";
+
+/*--------------------------------------------------------------
+13.0 Media
+--------------------------------------------------------------*/
+@import "13-media/media";

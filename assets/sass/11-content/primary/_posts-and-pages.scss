@@ -1,0 +1,211 @@
+.blog,
+.single {
+	#content.site-content {
+		background-color: $color__tertiary;
+	}
+	article {
+		background-color: white;
+		padding-top: 1.5rem;
+	}
+	.comments-area {
+		background-color: white;
+		padding: 1.5rem;
+	}
+}
+
+.sticky {
+	display: block;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+article {
+		margin-bottom: 10rem;
+}
+
+.entry-title {
+	a, a:visited {
+		color: $color__text-headline;
+	}
+}
+
+footer.entry-footer {
+	margin-top: 4rem;
+}
+
+footer.entry-footer > span {
+	display: block;
+}
+
+body.page-template-page-sections {
+	main > * {
+		max-width: 100%;
+		padding: 0;
+		margin: 0 auto;
+	}
+	section > * {
+		max-width: 900px;
+		padding: 0 1.5rem;
+		margin: 0 auto;
+	}
+	section h1 {
+		margin-top: 0;
+	}
+	section {
+		padding: 1.5rem 0;
+		&.orange {
+			background-color: $color__primary;
+			color: white;
+			h1, h2, h3, h4, h5, h6 {
+				color: white;
+			}
+		}
+		&.blue {
+			background-color: $color__secondary;
+			color: white;
+			h1, h2, h3, h4, h5, h6 {
+				color: white;
+			}
+		}
+	}
+}
+
+@include responsive(medium-screens) {
+	body.page-template-page-sections {
+		section > * {
+			padding: 0;
+		}
+	}
+}
+
+
+/* Post Footer */
+.modified-date {
+	display: block;
+}
+
+#middle-post-foot {
+	text-align: center;
+	input {
+		max-width: 300px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.svelte-social a.svelte {
+	font-family: 'kraficon';
+	speak: none;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+	line-height: 1.4;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	padding: 7px 9px;
+	margin-bottom: 3px;
+	color: white;
+	height: 2.8rem;
+	width: 2.8rem;
+	text-align: center;
+	webkit-transition: .5s background ease;
+	-moz-transition: .5s  background ease;
+	-o-transition: .5s  background ease;
+	-ms-transition: .5s  background ease;
+	transition: .5s  background ease;
+	&.facebook {
+		background-color: #3b5998;
+		font-size: 0;
+	}
+	&.facebook:after {
+		content: "\e615";
+		@include font-size(1.4);
+	}
+	&.facebook:hover {
+		background-color: #2c4271;
+	}
+	&.twitter {
+		background-color: #00acee;
+		font-size: 0;
+	}
+	&.twitter:after {
+		content: "\e616";
+		@include font-size(1.4);
+	}
+	&.twitter:hover {
+		background-color: #0081b2;
+	}
+	&.xing {
+		background-color: #126567;
+		font-size: 0;
+	}
+	&.xing:after {
+		content: "\ead3";
+		@include font-size(1.4);
+	}
+	&.xing:hover {
+		background-color: #0d4b4d;
+	}
+	&.googleplus {
+		background-color: #d34836;
+		font-size: 0;
+	}
+	&.googleplus:after {
+		content: "\e614";
+		@include font-size(1.4);
+	}
+	&.googleplus:hover {
+		background-color: #B24836;
+	}
+	&.whatsapp {
+		background-color: #0E9814;
+		font-size: 0;
+	}
+	&.whatsapp:after {
+		content: "\e605";
+		@include font-size(1.4);
+	}
+	&.whatsapp:hover {
+		background-color: #0d4b4d;
+	}
+}
+
+.svelte-social a.svelte::selection {
+	background-color: transparent;
+}
+a.svelte:hover {
+	color: white;
+}
+
+.svelte-social {
+		text-align: center;
+}
+@include responsive(medium-screens) {
+	.svelte-social {
+		text-align: right;
+	}
+}

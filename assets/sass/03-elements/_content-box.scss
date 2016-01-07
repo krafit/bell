@@ -1,0 +1,29 @@
+.content-box {
+	padding: 1.25rem;
+	text-align: left;
+	& h3 {
+		text-align: center;
+	}
+	& >*:first-child {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	& >*:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	background-color: $color__tertiary; 
+	.blue & {
+		background-color: $color__secondary__light;
+	}
+	.orange & {
+		background-color: $color__primary__light;
+	}
+}
+.content-box-head {
+	text-align: center;
+	font-size: 3rem;
+	height: 4rem;
+	line-height: 4.5rem;
+	vertical-align: middle;
+}
