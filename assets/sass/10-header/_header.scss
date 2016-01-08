@@ -7,7 +7,7 @@
 		vertical-align: middle;
 	}
 	a {
-		color: $color__text-header;
+		color: $color__secondary;
 	}
 	a:hover {
 		color: $color__text-header-hover;
@@ -16,6 +16,9 @@
 .site-title {
 	margin: 0;
 	text-align: center;
+	a {
+		color: $color__text-header;
+	}
 }
 
 

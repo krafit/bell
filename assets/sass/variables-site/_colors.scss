@@ -1,5 +1,5 @@
 $color__primary: #fab313;
-$color__secondary: #1982b0;
+$color__secondary: #529ECC;
 $color__tertiary: #eee;
 
 $color__primary__light: lighten( $color__primary, 3% );
@@ -8,14 +8,13 @@ $color__primary__dark: darken( $color__primary, 3% );
 $color__secondary__dark: darken( $color__secondary, 3% );
 
 
-$color__background-body: #fff; //
-$color__background-header: #eee; 
+$color__background-body: #fafafa;
 $color__background-screen: #f1f1f1; //
 $color__background-hr: #ccc; //
 $color__background-button: #e6e6e6; //
 $color__background-pre: #eee; //
 $color__background-ins: #fff9c0; //
-$color__background-footer: #eee; 
+$color__background-footer: #fafafa; 
 
 $color__text-screen: #21759b; //
 $color__text-input: #666; //
@@ -25,7 +24,7 @@ $color__link-visited: $color__secondary; //
 $color__link-hover: $color__secondary__dark; //
 $color__text-header: #444444;
 $color__text-header_hover: $color__primary;
-$color__text-main: #777;
+$color__text-main: #444444;
 $color__text-headline: #444444;
 
 $color__border-input: #ccc; //
