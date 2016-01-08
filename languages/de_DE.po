@@ -1,0 +1,173 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bell\n"
+"POT-Creation-Date: 2016-01-08 01:47+0100\n"
+"PO-Revision-Date: 2016-01-08 01:49+0100\n"
+"Last-Translator: Simon Kraft (krafit.de) <simon@krafit.de>\n"
+"Language-Team: Simon Kraft (krafit.de) <simon@krafit.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oh nein! Diese Seite konnten wir nicht finden."
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"An dieser Stelle konnte nichts gefunden werden. Vielleicht probierst du es "
+"mit einer Suchanfrage?"
+
+#: 404.php:33
+msgid "Most Used Categories"
+msgstr "Meistbenutzte Kategorien"
+
+#: 404.php:51
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Schau mal in den Monats-Archiven. %1$s"
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "Kommentarnavigation"
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr "Ältere Kommentare"
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr "Neuere Kommentare"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: functions.php:47
+msgid "Primary"
+msgstr "Primär"
+
+#: functions.php:85
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Zum Inhalt springen"
+
+#: inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Veröffentlicht am %s"
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "von %s"
+
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Podcast: %1$s"
+
+#: inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Schlagworte: %1$s"
+
+#: inc/template-tags.php:64
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:64
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:64
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:71 template-parts/content-page.php:33
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:22
+msgid "Pages:"
+msgstr "Seiten: "
+
+#: template-parts/content.php:37
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Weiterlesen %s <span class=\"meta-nav\">&rarr;</span>"
+
+#. Theme Name of the plugin/theme
+msgid "Bell"
+msgstr "Bell"
+
+#. Theme URI of the plugin/theme
+msgid "https://krafit.de/"
+msgstr "https://krafit.de/"
+
+#. Author of the plugin/theme
+msgid "Simon Kraft (krafit.de)"
+msgstr "Simon Kraft (krafit.de)"
+
+#. Author URI of the plugin/theme
+msgid "https://simonkraft.de/"
+msgstr "https://simonkraft.de/"
