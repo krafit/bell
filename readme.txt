@@ -1,19 +1,18 @@
 === krafit_bell ===
 
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+Contributors: krafit
+Tags: translation-ready, theme-options, custom-menu, 
 
 Requires at least: 4.0
-Tested up to: 4.3.1
+Tested up to: 4.4.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called krafit_bell, or underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called krafit_bell, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a Bell. 
 
 == Installation ==
 	
@@ -25,11 +24,12 @@ Hi. I'm a starter theme called krafit_bell, or underscores, if you like. I'm a t
 
 = Does this theme support any plugins? =
 
-krafit_bell includes support for Infinite Scroll in Jetpack.
+* WP RSS Aggregator
+* WP-PageNavi
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 0.1 - January 08 2016 =
 * Initial release
 
 == Credits ==
