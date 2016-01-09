@@ -7,8 +7,15 @@
  * @package krafit_bell
  */
 
+$categories = get_the_category();
+	foreach ( $categories as $category ) { 
+    	$image = get_term_meta( $category->term_id, 'image', true );
+	}
+	
 // We'll need a link to link to the feed source.
 	$podcast_permalink = get_post_meta($post->ID, 'wprss_item_permalink', true);
+
+
 ?>
 
 
@@ -16,11 +23,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail();
-			} 
-
 			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			} else {
@@ -30,14 +32,13 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php	
+			if ( ! empty( $image ) ) {
+	    		echo '<a href="' . esc_url( $podcast_permalink ) . '" rel="bookmark" target="_blank"><img src="' . esc_url( wp_get_attachment_url( $image) ) . '" class="episode-cover alignleft"></a>';
+			}
+		?>
 		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'krafit_bell' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-
+			the_excerpt();
 		?>
 	</div><!-- .entry-content -->
 	
