@@ -25,6 +25,11 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'krafit_bell' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<?php if ( get_header_image() ) : ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img src="<?php header_image(); ?>" alt="" class="header-image">
+			</a>
+		<?php endif; // End header image check. ?>
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>

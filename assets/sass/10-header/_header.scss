@@ -1,7 +1,6 @@
 .site-header {
 	text-align: center;
 	@include font-size(1.78);
-	padding: .95rem 0 .75rem;
 	& > .wrap > * {
 		line-height: 2rem;
 		vertical-align: middle;
@@ -12,6 +11,12 @@
 	a:hover {
 		color: $color__text-header-hover;
 	}
+}
+.header-image {
+	width: 100%;
+}
+.site-branding {
+	padding: .95rem 0 .75rem;
 }
 .site-title {
 	margin: 0;
