@@ -9,7 +9,7 @@
 		color: $color__secondary;
 	}
 	a:hover {
-		color: $color__text-header-hover;
+		color: $color__secondary;
 	}
 }
 .header-image {
@@ -21,7 +21,12 @@
 .site-title {
 	margin: 0;
 	text-align: center;
+	font-weight: 600;
+	@include font-size(3);
 	a {
+		color: $color__text-header;
+	}
+	a:hover {
 		color: $color__text-header;
 	}
 }
@@ -30,5 +35,6 @@
 .site-description {
 	color: rgba(68, 68, 68, 0.701961);
 	@include font-size(1.04);
+	margin-top: 0;
 }
 
