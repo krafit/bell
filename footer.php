@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
 					<?php 
-						echo ('&copy ') . date("Y") . (' Podäppler');
+						echo ('&copy ') . date("Y") . (' Podäppler - <a href="https://podaeppler.de/impressum">Impressum</a>');
 					?>
 				</div><!-- .site-info -->
 	</footer><!-- #colophon -->
