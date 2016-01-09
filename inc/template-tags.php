@@ -7,11 +7,12 @@
  * @package krafit_bell
  */
 
-if ( ! function_exists( 'krafit_bell_posted_on' ) ) :
+if ( ! function_exists( 'krafit_bell_episode_meta' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function krafit_bell_posted_on() {
+function krafit_bell_episode_meta() {
+
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -25,17 +26,20 @@ function krafit_bell_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'krafit_bell' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		$time_string
 	);
 
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'krafit_bell' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_the_author_meta( 'user_url' ) ) . '" target="_blank">' . esc_html( get_the_author() ) . '</a></span>'
 	);
+	
+	// We'll need a link to link to the feed source.
+		global $wp_query;
+			$post = $wp_query->post;
+			$podcast_permalink = get_post_meta($post->ID, 'wprss_item_permalink', true);
+		wp_reset_query();
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
-
+	echo '<div class="raw"><div class="column third no-margin episode-link"><a href="' . esc_url( $podcast_permalink ) . '" rel="bookmark" target="_blank">Zur Episode</a></div><div class="column third no-margin episode-date">' . $posted_on . '</div><div class="column third no-margin episode-author">' . $byline . '</div></div>'; // WPCS: XSS OK.
 }
 endif;
 

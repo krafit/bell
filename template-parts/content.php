@@ -26,13 +26,7 @@
 			} else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( $podcast_permalink ) . '" rel="bookmark" target="_blank">', '</a></h2>' );
 			}
-
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php krafit_bell_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -44,8 +38,11 @@
 			) );
 
 
-			echo '<a href="' . esc_url( $podcast_permalink ) . '" rel="bookmark" target="_blank">Zur Episode</a>';
 		?>
 	</div><!-- .entry-content -->
+	
+	<footer class="entry-footer">
+			<?php krafit_bell_episode_meta(); ?>
+	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
