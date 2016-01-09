@@ -12,20 +12,3 @@
 		color: $color__text-main;
 	}
 }
-
-
-@include responsive(small-screens) {
-	.site-footer {
-		.site-info {
-			text-align: left;
-			float: left;
-			width: 40%;
-			display: inline-block;
-		}
-		.footer-navigation {
-			float: right;
-			text-align: right;
-			width: 58%;
-		}
-	}	
-}
