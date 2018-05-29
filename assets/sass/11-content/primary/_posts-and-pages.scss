@@ -1,3 +1,4 @@
+.home,
 .blog,
 .single {
 	article {
@@ -28,7 +29,7 @@
 }
 
 .page-content,
-.entry-content,
+.entry-content:not(.frame),
 .entry-summary {
 	margin: 1.5em 0 0;
 }
@@ -37,6 +38,9 @@ article {
 		margin-bottom: 2rem;
 }
 
+.post-thumbnail img {
+	width: 100%;
+}
 
 .entry-title {
 	margin-top: 0;
@@ -52,6 +56,10 @@ article {
 .episode-cover {
 	width: 100%;
 	margin-bottom: 1rem;
+}
+
+.page-template-page-podcasts .page .column {
+	margin-bottom: .75em;
 }
 
 footer.entry-footer {
@@ -70,7 +78,7 @@ footer.entry-footer > span {
 	}
 }
 @include responsive(medium-screens) {
-	footer.entry-footer {
+	.type-krafit_episodes footer.entry-footer {
 		padding-bottom: 2em;
 	}
 	.episode-link {
